@@ -1,11 +1,383 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="normalize.css" type="text/css" />
+    <link rel="stylesheet" href="build/css/styles.css" type="text/css" />
+    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="build/fonts/RedHatDisplay-Regular.ttf" />
+    <link rel="stylesheet" href="build/fonts/RedHatDisplay-Bold.ttf" />
+    <title>Index</title>
+  </head>
+  <body>
+    <header class="header text-white">
+      <div class="header__contenido mx-3 position-relative p-3">
+        <nav class="navbar navbar-expand-lg fs-3">
+          <div class="container-fluid d-flex justify-content-between">
+            <div class="d-flex">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-label="Toggle navigation"
+              >
+                <i class="bi bi-list text-white fs-1"></i>
+              </button>
+
+              <h1 class="fw-bold text-white" href="#">DEPORTIUM</h1>
+            </div>
+            <div>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav text-center">
+                  <li class="nav-item mx-5">
+                    <a
+                      class="link-light link-underline-opacity-0 fs-2 fw-bold link-underline-opacity-100-hover"
+                      aria-current="page"
+                      href="#"
+                      >Inicio</a
+                    >
+                  </li>
+                  <li class="nav-item mx-5">
+                    <a
+                      class="link-light link-underline-opacity-0 fs-2 fw-bold link-underline-opacity-100-hover"
+                      href="#"
+                      >Contacto</a
+                    >
+                  </li>
+                  <li class="nav-item dropdown mx-5">
+                    <a
+                      class="link-light link-underline-opacity-0 fs-2 fw-bold link-underline-opacity-100-hover dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Idioma
+                    </a>
+                    <ul class="dropdown-menu bg-transparent border-0">
+                      <li>
+                        <a
+                          class="dropdown-item link-light fs-5 bg-transparent"
+                          href="#"
+                          >Español</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item link-light fs-5 bg-transparent"
+                          href="#"
+                          >Inglés</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="header__registro d-flex justify-content-center align-items-center"
+            >
+              <button class="btn mx-2">Registro</button>
+              <a href="#">Iniciar Sesión</a>
+            </div>
+          </div>
+        </nav>
+        <div class="header__texto mx-3 mt-5">
+          <h2>Reserva sin complicaciones, maximiza tu diversión.</h2>
+          <div class="d-flex justify-content-between">
+            <div>
+              <div class="header__texto--contenido my-5">
+                <p>
+                  Todas las pistas de nuestra localidad Utrera a tu alcance. Más
+                  de 30 instalaciones deportivas gestionadas por DEPORTIUM
+                </p>
+              </div>
+            </div>
+            <div
+              class="header__reservar d-flex flex-column justify-content-center align-items-center"
+            >
+              <div class="header__reservar--image">
+                <img
+                  src="build/img/campofutbol.jpg"
+                  alt="campofutbol"
+                  class="img-fluid"
+                />
+              </div>
+              <button class="btn btn-warning m-3">Reservar Pista</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section
+      class="container d-flex flex-column justify-content-center align-items-center"
+    >
+      <div class="scene">
+        <div class="carousel">
+          <div class="carousel__cell">
+            <img
+              src="build/img/almazara_0001_s.webp"
+              alt="imagen"
+              class="img-fluid"
+            />
+          </div>
+          <div class="carousel__cell">
+            <img
+              src="build/img/baloncesto_s.webp"
+              alt="imagen"
+              class="img-fluid"
+            />
+          </div>
+          <div class="carousel__cell">
+            <img
+              src="build/img/padelUtrera_s.webp"
+              alt="imagen"
+              class="img-fluid"
+            />
+          </div>
+          <div class="carousel__cell">
+            <img
+              src="build/img/pistaSanJoaquin_s.webp"
+              alt="imagen"
+              class="img-fluid"
+            />
+          </div>
+          <div class="carousel__cell">
+            <img src="build/img/tenis_s.webp" alt="imagen" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-3 d-block">
+        <button class="previous-button btn__instalaciones">Anterior</button>
+        <button class="next-button btn__instalaciones">Siguiente</button>
+      </div>
+      <button class="btn__instalaciones mt-4">
+        Ver Nuestras Instalacioness
+      </button>
+    </section>
+    <section class="descargar container w-75 rounded-5 mt-5">
+      <div
+        class="m-auto w-50 d-flex flex-column justify-content-center align-items-center"
+      >
+        <div>
+          <h3>
+            Descarga nuestra app para facilitar su reserva | Pista de padel,
+            tenis, fútbol o baloncesto
+          </h3>
+        </div>
+        <div
+          class="w-100 d-flex justify-content-center align-items-center descargar__app"
+        >
+          <img
+            src="build/img/tienda-apple.svg"
+            alt="tienda-apple"
+            class="img-fluid mx-2"
+          />
+          <img
+            src="build/img/tienda-android.svg"
+            alt="tienda-android"
+            class="img-fluid mx-2"
+          />
+        </div>
+      </div>
+    </section>
+    <main class="informacion mt-5 container w-75">
+      <h2 class="text-center">¿Qué es DEPORTIUM?</h2>
+
+      <div>
+        <p>
+          DEPORTIUM es tu portal de referencia para la reserva sencilla y rápida
+          de instalaciones deportivas de alta calidad en Utrera. Explora una
+          amplia gama de opciones, desde pistas de tenis hasta campos de fútbol,
+          y asegura tu espacio para practicar tu deporte favorito en cualquier
+          momento y lugar.
+        </p>
+      </div>
+      <section class="container opinions">
+        <h2 class="opinions__heading text-center my-5">Opiniones</h2>
+
+        <div class="opinions__grid">
+          <div class="opinion">
+            <div class="opinion__header d-flex justify-content-evenly">
+              <div class="opinion__image">
+                <img src="build/img/persona1_1_11zon_s.webp" alt="opinion" />
+              </div>
+
+              <div class="opinion__info">
+                <p class="opinion__autor">Manolo García</p>
+                <img
+                  class="opinion__raiting"
+                  src="build/img/estrellas.png"
+                  alt="imagen estrellas"
+                />
+              </div>
+            </div>
+
+            <div class="opinion__text">
+              Increíble plataforma para reservar pistas deportivas. La variedad
+              de opciones y la facilidad de reserva hacen que sea mi elección
+              preferida. Las instalaciones siempre cumplen con las expectativas,
+              y el servicio al cliente es excepcional. Ideal para cualquier
+              amante del deporte en Utrera.
+            </div>
+          </div>
+          <!--.opinion-->
+
+          <div class="opinion">
+            <div class="opinion__header d-flex justify-content-evenly">
+              <div class="opinion__image">
+                <img src="build/img/persona2_2_11zon_s.webp" alt="opinion" />
+              </div>
+
+              <div class="opinion__info">
+                <p class="opinion__autor">Carmen López</p>
+                <img
+                  class="opinion__raiting"
+                  src="build/img/estrellas.png"
+                  alt="imagen estrellas"
+                />
+              </div>
+            </div>
+
+            <div class="opinion__text">
+              Esta plataforma ha simplificado por completo mi experiencia al
+              reservar pistas deportivas. La interfaz intuitiva y la información
+              detallada sobre las instalaciones facilitan la toma de decisiones.
+              La eficiencia en la confirmación de las reservas y la calidad de
+              las instalaciones la convierten en mi opción principal para
+              organizar actividades deportivas en la región.
+            </div>
+          </div>
+          <!--.opinion-->
+
+          <div class="opinion">
+            <div class="opinion__header d-flex justify-content-evenly">
+              <div class="opinion__image">
+                <img src="build/img/persona3_s.webp" alt="opinion" />
+              </div>
+
+              <div class="opinion__info">
+                <p class="opinion__autor">Antonio Campos</p>
+                <img
+                  class="opinion__raiting"
+                  src="build/img/estrellas.png"
+                  alt="imagen estrellas"
+                />
+              </div>
+            </div>
+
+            <div class="opinion__text">
+              Una excelente app, puedo seleccionar de una gran cantidad de
+              opciones y pagar con tarjeta o efectivo según me convenga.
+            </div>
+          </div>
+          <!--.opinion-->
+          <div class="opinion">
+            <div class="opinion__header d-flex justify-content-evenly">
+              <div class="opinion__image">
+                <img src="build/img/persona4_s.webp" alt="opinion" />
+              </div>
+
+              <div class="opinion__info">
+                <p class="opinion__autor">Amelia Martínez</p>
+                <img
+                  class="opinion__raiting"
+                  src="build/img/estrellas.png"
+                  alt="imagen estrellas"
+                />
+              </div>
+            </div>
+
+            <div class="opinion__text">
+              Una joya para los deportistas en Sevilla. La plataforma ofrece una
+              amplia variedad de opciones para reservar pistas deportivas en
+              distintas ubicaciones. La transparencia en las tarifas y la
+              rapidez en la confirmación hacen que sea mi elección preferida.
+              Ideal para planificar actividades deportivas de manera fácil y
+              rápida.
+            </div>
+          </div>
+          <!--.opinion-->
+          <div class="opinion">
+            <div class="opinion__header d-flex justify-content-evenly">
+              <div class="opinion__image">
+                <img src="build/img/persona5_s.webp" alt="opinion" />
+              </div>
+
+              <div class="opinion__info">
+                <p class="opinion__autor">Nicolás Rodríguez</p>
+                <img
+                  class="opinion__raiting"
+                  src="build/img/estrellas.png"
+                  alt="imagen estrellas"
+                />
+              </div>
+            </div>
+
+            <div class="opinion__text">
+              Desde la primera vez que utilicé esta plataforma para reservar
+              pistas deportivas, me quedé impresionado. La variedad de opciones
+              y la eficiencia del proceso de reserva son inigualables. Aunque he
+              utilizado servicios similares en diferentes lugares, esta
+              plataforma se destaca por su calidad y servicio al cliente.
+              ¡Totalmente recomendada!
+            </div>
+          </div>
+          <!-- .opinion -->
+          <div class="opinion">
+            <div class="opinion__header d-flex justify-content-md-between">
+              <!-- .opinion -->
+              <div class="opinion__image">
+                <img src="build/img/persona6_3_11zon_s.webp" alt="opinion" />
+              </div>
+
+              <div class="opinion__info">
+                <p class="opinion__autor">Jorge Espino</p>
+                <img
+                  class="opinion__raiting"
+                  src="build/img/estrellas.png"
+                  alt="imagen estrellas"
+                />
+              </div>
+            </div>
+
+            <div class="opinion__text">
+              La facilidad y conveniencia que ofrece esta plataforma para
+              reservar pistas deportivas son insuperables. Las opciones
+              disponibles se adaptan a todos los gustos, y la calidad de las
+              instalaciones es destacada. Una herramienta esencial para quienes
+              buscan organizar sus actividades deportivas en la región
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="mt-5">
+      <img src="build/img/wave.svg" alt="" />
+      <div class="d-flex flex-column bg-primary w-100 h-100 text-white p-3">
+        <div class="d-flex justify-content-between align-items-center">
+          <div>
+            <h1>DEPORTIUM</h1>
+          </div>
+          <div>
+            <i class="bi bi-instagram fs-1 mx-3"></i>
+            <i class="bi bi-twitter-x fs-1 mx-3"></i>
+            <i class="bi bi-twitch fs-1 mx-3"></i>
+            <i class="bi bi-tiktok fs-1 mx-3"></i>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between">
+          <p>&copy;2024 Deportium | Todos los derechos reservados</p>
+          <p>
+            Avisos legales | Accesibilidad | Política de privacidad | Cookies
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/funciones.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
 </html>

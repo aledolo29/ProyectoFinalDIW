@@ -1,0 +1,22 @@
+@use "sass:color";
+
+//Reescribimos variables de Bootstrap
+$darkBlue: #0e2423;
+$verde: #46c338;
+$blanco: #fff7f0;
+$naranja: #ff8247;
+$negro: #161715;
+$rojo: rgba(251, 17, 17, 50%);
+
+//Asignamos nuestra paleta de colores a variables de Bootstrap
+$success: $verde;
+$white: $blanco;
+$primary: $darkBlue;
+$warning: $naranja;
+$dark: $negro;
+$danger: $rojo;
+
+//Links
+$nav-link-color: $blanco;
+@import "../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";

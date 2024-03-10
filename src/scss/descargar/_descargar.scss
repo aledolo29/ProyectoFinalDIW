@@ -1,0 +1,13 @@
+@use "../base/variables" as var;
+@use "../base/mixins" as m;
+
+.descargar {
+  padding: 3rem;
+  box-shadow: 5px 5px 0px 0px rgb(169, 169, 169);
+  background: linear-gradient(to right, var.$verde, white);
+  &__app{
+    img{
+        max-width: 150px;
+    }
+  }
+}

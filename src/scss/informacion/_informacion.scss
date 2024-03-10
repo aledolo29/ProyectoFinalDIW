@@ -1,0 +1,57 @@
+@use "../base/variables" as var;
+@use "../base/mixins" as m;
+
+.opinions {
+  // max-width: 85%;
+}
+.opinions__grid {
+  @include m.desktop {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+  .opinion {
+    background-color: var.$darkBlue;
+    color: var.$blanco;
+    padding: 2rem;
+    border-radius: 3rem;
+    margin-top: 5px;
+    @include m.desktop {
+      margin-top: 0px;
+    }
+    &__header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__autor {
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+    &__image {
+      margin-right: 5px;
+      width: 200px;
+      img {
+        @include m.desktop {
+          flex-basis: 2rem;
+        }
+        border-radius: 50%;
+        overflow: hidden;
+      }
+    }
+    &__text {
+      margin-top: 10px;
+      line-height: 2;
+    }
+    &__calification {
+      width: 80%;
+    }
+    &:nth-child(2) {
+      grid-column: 2 / 4;
+    }
+    &:nth-child(6) {
+      grid-column: 3 / 5;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+@use "../base/variables" as var;
+@use "../base/mixins" as m;
+.header {
+  background-image: url(../img/paddle-tennis-6612340_1280_s.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 3px 3px 10px 1px black;
+  &__texto {
+    width: auto;
+    &--contenido {
+      width: 325px;
+      height: 100px;
+    }
+  }
+  a {
+    color: var.$blanco;
+    text-decoration: none;
+    &:hover {
+      color: var.$negro;
+      text-decoration: underline;
+    }
+  }
+  &__registro {
+    width: fit-content;
+    button {
+      @include m.btn(var.$naranja, var.$blanco);
+    }
+  }
+  &__reservar {
+    &--image {
+      img {
+        width: 15rem;
+        border-radius: 50%;
+      }
+    }
+    button {
+      @include m.btn(var.$naranja, var.$blanco);
+    }
+  }
+}
