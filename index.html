@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="normalize.css" type="text/css" />
     <link rel="stylesheet" href="build/css/styles.css" type="text/css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="" />
-    <link rel="stylesheet" href="build/fonts/RedHatDisplay-Regular.ttf" />
-    <link rel="stylesheet" href="build/fonts/RedHatDisplay-Bold.ttf" />
     <title>Index</title>
   </head>
   <body>
@@ -17,7 +16,7 @@
           <div class="container-fluid d-flex justify-content-between">
             <div class="d-flex">
               <button
-                class="navbar-toggler"
+                class="navbar-toggler border-0"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent"
@@ -59,18 +58,38 @@
                     </a>
                     <ul class="dropdown-menu bg-transparent border-0">
                       <li>
-                        <a
-                          class="dropdown-item link-light fs-5 bg-transparent"
-                          href="#"
-                          >Español</a
+                        <div
+                          class="w-100 d-flex justify-content-center align-items-center"
                         >
+                          <img
+                            src="build/img/icons8-españa-2-48.png"
+                            alt="españa"
+                            class="w-25 h-100"
+                          />
+                          <a
+                            class="dropdown-item link-light fs-5 bg-transparent"
+                            href="#"
+                          >
+                            Español</a
+                          >
+                        </div>
                       </li>
                       <li>
-                        <a
-                          class="dropdown-item link-light fs-5 bg-transparent"
-                          href="#"
-                          >Inglés</a
+                        <div
+                          class="w-100 d-flex justify-content-center align-items-center"
                         >
+                          <img
+                            src="build/img/icons8-gran-bretaña-48.png "
+                            alt="españa"
+                            class="w-25 h-75"
+                          />
+                          <a
+                            class="dropdown-item link-light fs-5 bg-transparent"
+                            href="#"
+                          >
+                            Inglés</a
+                          >
+                        </div>
                       </li>
                     </ul>
                   </li>
@@ -80,8 +99,16 @@
             <div
               class="header__registro d-flex justify-content-center align-items-center"
             >
-              <button class="btn mx-2">Registro</button>
-              <a href="#">Iniciar Sesión</a>
+              <a
+                data-bs-toggle="modal"
+                data-bs-target="#modalRegistro"
+                href="registro.html"
+                class="btn mx-2 registro text-decoration-none"
+                >Registro</a
+              >
+              <a data-bs-toggle="modal" data-bs-target="#modal" href="#"
+                >Iniciar Sesión</a
+              >
             </div>
           </div>
         </nav>
@@ -106,7 +133,11 @@
                   class="img-fluid"
                 />
               </div>
-              <button class="btn btn-warning m-3">Reservar Pista</button>
+              <a
+                href="reservaPistas.html"
+                class="btn reservar text-decoration-none m-3"
+                >Reservar Pista</a
+              >
             </div>
           </div>
         </div>
@@ -154,9 +185,9 @@
         <button class="previous-button btn__instalaciones">Anterior</button>
         <button class="next-button btn__instalaciones">Siguiente</button>
       </div>
-      <button class="btn__instalaciones mt-4">
-        Ver Nuestras Instalacioness
-      </button>
+      <a href="galeria.html" class="btn__instalaciones mt-4">
+        Ver Nuestras Instalaciones
+      </a>
     </section>
     <section class="descargar container w-75 rounded-5 mt-5">
       <div
@@ -196,7 +227,7 @@
           momento y lugar.
         </p>
       </div>
-      <section class="container opinions">
+      <section data-aos="zoom-in-up" class="container opinions">
         <h2 class="opinions__heading text-center my-5">Opiniones</h2>
 
         <div class="opinions__grid">
@@ -355,7 +386,7 @@
         </div>
       </section>
     </main>
-    <footer class="mt-5">
+    <footer id="footer" class="mt-5">
       <img src="build/img/wave.svg" alt="" />
       <div class="d-flex flex-column bg-primary w-100 h-100 text-white p-3">
         <div class="d-flex justify-content-between align-items-center">
@@ -377,7 +408,222 @@
         </div>
       </div>
     </footer>
+    <div
+      class="modal fade"
+      id="modal"
+      tabindex="-1"
+      aria-labelledby="modal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content bg-primary text-white">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close text-truncate bg-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div
+            class="registro mt-3 modal-body d-flex flex-column justify-content-center align-items-center text-center"
+          >
+            <h1 class="fs-2">Entrar en Deportium</h1>
+            <form
+              class="needs-validation form d-flex flex-column justify-content-center align-items-center w-100"
+              action="#"
+              novalidate
+            >
+              <div class="w-100">
+                <input
+                  type="text"
+                  name="usuario"
+                  id="usuario"
+                  class="py-3 px-1 bg-transparent border-1 text-white rounded-2 mt-3 w-50"
+                  placeholder="Usuario, email o teléfono"
+                  required
+                />
+                <div class="valid-feedback">Campo válido</div>
+                <div class="invalid-feedback">
+                  Completa el campo correctamente
+                </div>
+              </div>
+              <div class="w-100">
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  class="py-3 px-1 mt-3 border-1 rounded-2 w-50"
+                  placeholder="Contraseña"
+                  required
+                />
+                <div class="valid-feedback mb-2">Campo válido</div>
+                <div class="invalid-feedback mb-2">
+                  Completa la contraseña correctamente
+                </div>
+              </div>
+              <button class="btn d-block w-50 mt-3">
+                <i class="bi bi-person"></i> Entrar
+              </button>
+            </form>
+          </div>
+          <div
+            class="modal-footer mb-3 d-flex flex-column justify-content-center align-items-center"
+          >
+            <a class="text-white" href="#">¿Has olvidado tu contraseña</a>
+            <a
+              class="text-white"
+              href="#"
+              data-bs-dismiss="modal"
+              data-bs-toggle="modal"
+              data-bs-target="#modalRegistro"
+              >Registrate ahora</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modalRegistro"
+      tabindex="-1"
+      aria-labelledby="modalRegistro"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content bg-primary text-white">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close text-truncate bg-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div
+            class="registro mt-3 modal-body d-flex flex-column justify-content-center align-items-center text-center"
+          >
+            <h1 class="fs-2">Registrate en Deportium</h1>
+            <form
+              class="needs-validation d-flex flex-column justify-content-center align-items-center w-100"
+              action="#"
+              novalidate
+            >
+              <div class="w-100">
+                <input
+                  type="text"
+                  name="nombre"
+                  id="nombre"
+                  class="py-3 px-1 bg-transparent border-1 text-white rounded-2 mt-3 w-50"
+                  placeholder="Nombre"
+                  required
+                />
+                <div class="valid-feedback">Campo válido</div>
+                <div class="invalid-feedback">Debes completar el nombre</div>
+              </div>
+              <div class="w-100">
+                <div>
+                  <input
+                    type="text"
+                    name="apellido1"
+                    id="apellido1"
+                    class="py-3 px-1 bg-transparent border-1 text-white rounded-2 mt-3 w-50"
+                    placeholder="Primer apellido"
+                    required
+                  />
+                  <div class="valid-feedback">Campo válido</div>
+                  <div class="invalid-feedback">
+                    Debes completar el primer apellido
+                  </div>
+                </div>
+              </div>
+              <div class="w-100">
+                <input
+                  type="text"
+                  name="apellido2"
+                  id="apellido2"
+                  class="py-3 px-1 bg-transparent border-1 text-white rounded-2 mt-3 w-50"
+                  placeholder="Segundo apellido"
+                  required
+                />
+                <div class="valid-feedback">Campo válido</div>
+                <div class="invalid-feedback">
+                  Debes completar el segundo apellido
+                </div>
+              </div>
+              <div class="w-100">
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  class="py-3 bg-transparent text-white px-1 mt-3 border-1 rounded-2 w-50"
+                  placeholder="Contraseña"
+                  required
+                />
+                <div class="valid-feedback">Campo válido</div>
+                <div class="invalid-feedback">
+                  Debes completar la contraseña
+                </div>
+              </div>
+              <div class="w-100">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="py-3 px-1 bg-transparent border-1 text-white rounded-2 mt-3 w-50"
+                  placeholder="Email"
+                  required
+                />
+                <div class="valid-feedback">Campo válido</div>
+                <div class="invalid-feedback">
+                  Debes completar el email de forma correcta
+                </div>
+              </div>
+              <div class="mb-3 form-check mt-3">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                  required
+                />
+                <label class="form-check-label" for="exampleCheck1"
+                  >Acepto las condiciones de privacidad</label
+                >
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck2"
+                  required
+                />
+                <label class="form-check-label" for="exampleCheck2"
+                  >Soy mayor de 16 años</label
+                >
+              </div>
+              <div class="fs-6 w-50 text-start mb-3">
+                Se establece la edad mínima de 16 años para prestar
+                consentimiento por los menores sin la intervención de los padres
+                o tutores
+              </div>
+
+              <button class="btn d-block w-50">
+                <i class="bi bi-person"></i> Registrate
+              </button>
+            </form>
+          </div>
+          <div
+            class="modal-footer mb-3 d-flex flex-column justify-content-center align-items-center"
+          ></div>
+        </div>
+      </div>
+    </div>
     <script src="js/funciones.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="js/boostrap.validation.js"></script>
   </body>
 </html>

@@ -1,5 +1,6 @@
 @use "../base/variables" as var;
 @use "../base/mixins" as m;
+@use "../custom";
 .header {
   background-image: url(../img/paddle-tennis-6612340_1280_s.webp);
   background-repeat: no-repeat;
@@ -22,7 +23,7 @@
   }
   &__registro {
     width: fit-content;
-    button {
+    .registro {
       @include m.btn(var.$naranja, var.$blanco);
     }
   }
@@ -33,7 +34,7 @@
         border-radius: 50%;
       }
     }
-    button {
+    .reservar {
       @include m.btn(var.$naranja, var.$blanco);
     }
   }

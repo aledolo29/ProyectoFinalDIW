@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="build/css/styles.css" />
+    <title>Galería</title>
+  </head>
+  <body>
+    <a class="fs-2 d-block mx-5" href="index.html">Volver</a>
+    <section>
+      <main class="galeria container-fluid my-5">
+        <div class="galeria__item">
+          <a
+            data-bs-toggle="modal"
+            data-bs-target="#modal-imagen"
+            data-bs-imagen="almazara_0001_batch"
+          >
+            <img
+              src="build/img/almazara_0001_batch.webp"
+              alt="padel"
+              class="img-fluid rounded-5"
+            />
+          </a>
+        </div>
+        <div class="galeria__item">
+          <a
+            data-bs-toggle="modal"
+            data-bs-target="#modal-imagen"
+            data-bs-imagen="baloncesto_batch"
+          >
+            <img
+              src="build/img/baloncesto_batch.webp"
+              alt="padel"
+              class="img-fluid rounded-5"
+            />
+          </a>
+        </div>
+        <div class="galeria__item">
+          <a
+            data-bs-toggle="modal"
+            data-bs-target="#modal-imagen"
+            data-bs-imagen="padelUtrera_batch"
+          >
+            <img
+              src="build/img/padelUtrera_batch.webp"
+              alt="padel"
+              class="img-fluid rounded-5"
+            />
+          </a>
+        </div>
+        <div class="galeria__item">
+          <a
+            data-bs-toggle="modal"
+            data-bs-target="#modal-imagen"
+            data-bs-imagen="pistaSanJoaquin_batch"
+          >
+            <img
+              src="build/img/pistaSanJoaquin_batch.webp"
+              alt="padel"
+              class="img-fluid rounded-5"
+            />
+          </a>
+        </div>
+        <div class="galeria__item">
+          <a
+            data-bs-toggle="modal"
+            data-bs-target="#modal-imagen"
+            data-bs-imagen="tenis_batch"
+          >
+            <img
+              src="build/img/tenis_batch.webp"
+              alt="padel"
+              class="img-fluid rounded-5"
+            />
+          </a>
+        </div>
+      </main>
+      <div class="modal fade" id="modal-imagen">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <!-- cuerpo del modal -->
+            <div class="modal-body"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/funcionesGaleria.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>

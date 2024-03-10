@@ -1,9 +1,15 @@
+@font-face {
+  font-family: "Red Hat Display";
+  src: url(../fonts/RedHatDisplay-Regular.ttf);
+}
+
 $darkBlue: #0e2423;
 $verde: #46c338;
 $blanco: #fff7f0;
 $naranja: #ff8247;
 $negro: #161715;
-$rojo: rgba(251, 17, 17, 50%);
+$rojo: #ff1111;
+$verdeClaro: #b5edad;
 //Fuentes
 $main-font: "Red Hat Display", sans-serif;
 

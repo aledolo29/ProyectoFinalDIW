@@ -1,0 +1,18 @@
+@use "../base/variables" as var;
+@use "../base/mixins" as m;
+@use "../custom";
+.pistas,
+.horas {
+  max-width: 90%;
+  background-color: var.$verdeClaro;
+}
+
+.dias {
+  color: var.$negro;
+  text-decoration: none;
+}
+
+.dias:hover {
+  text-decoration: underline;
+  color: var.$verde;
+}

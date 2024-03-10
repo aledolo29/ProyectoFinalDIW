@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="normalize.css" type="text/css" />
+    <link rel="stylesheet" href="build/css/styles.css" type="text/css" />
+    <title>Reservar Pistas</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg fs-3 bg-primary">
+        <div class="container-fluid d-flex justify-content-between">
+          <div class="d-flex">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-label="Toggle navigation"
+            >
+              <i class="bi bi-list text-white fs-1"></i>
+            </button>
+
+            <a
+              class="fw-bold display-3 text-decoration-none text-white"
+              href="index.html"
+              >DEPORTIUM</a
+            >
+          </div>
+          <div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav text-center">
+                <li class="nav-item mx-5">
+                  <a
+                    class="link-light fs-2 fw-bold"
+                    aria-current="page"
+                    href="index.html"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item mx-5">
+                  <a class="link-light fs-2 fw-bold" href="index.html#footer"
+                    >Contacto</a
+                  >
+                </li>
+                <li class="nav-item dropdown mx-5">
+                  <a
+                    class="link-light fs-2 fw-bold dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Idioma
+                  </a>
+                  <ul class="dropdown-menu bg-transparent border-0">
+                    <li>
+                      <a
+                        class="dropdown-item link-light fs-5 bg-transparent"
+                        href="#"
+                        >Español</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item link-light fs-5 bg-transparent"
+                        href="#"
+                        >Inglés</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="header__registro d-flex justify-content-center align-items-center"
+          >
+            <a
+              href="registro.html"
+              class="btn mx-2 registro text-decoration-none"
+              >Registro</a
+            >
+            <a data-bs-toggle="modal" data-bs-target="#moda" href="#"
+              >Iniciar Sesión</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container-fluid bg-white">
+      <div class="tabler-container overflow-x-auto">
+        <table class="table fs-3">
+          <thead>
+            <tr>
+              <th class="text-center p-3" scope="col">
+                <a class="dias fs-2 fw-bold" href="#">
+                  <i class="bi bi-arrow-left"></i> Lunes 16</a
+                >
+              </th>
+              <th class="text-center p-3" scope="col">
+                <a class="dias fs-2 fw-bold" href="#">Martes 17</a>
+              </th>
+              <th class="text-center p-3" scope="col">
+                <a class="dias fs-2 fw-bold" href="#">Miércoles 18</a>
+              </th>
+              <th class="text-center p-3" scope="col">
+                <a class="dias fs-2 fw-bold" href="#">Jueves 19</a>
+              </th>
+              <th class="text-center p-3" scope="col">
+                <a class="dias fs-2 fw-bold" href="#">Viernes 20</a>
+              </th>
+              <th class="text-center p-3" scope="col">
+                <a class="dias fs-2 fw-bold" href="#">Sábado 21</a>
+              </th>
+              <th class="text-center p-3" scope="col">
+                <a class="dias fs-2 fw-bold" href="#"
+                  >Domingo 22 <i class="bi bi-arrow-right"></i>
+                </a>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div
+                  class="pistas text-center m-auto p-3 bg-success text-white fw-bold"
+                >
+                  Fútbol V Centenario 1
+                </div>
+              </td>
+              <td>
+                <div
+                  class="pistas text-center m-auto p-3 bg-success text-white fw-bold"
+                >
+                  Fútbol V Centenario 2
+                </div>
+              </td>
+              <td>
+                <div
+                  class="pistas text-center m-auto p-3 bg-success text-white fw-bold"
+                >
+                  Fútbol San Joaquín
+                </div>
+              </td>
+              <td>
+                <div
+                  class="pistas text-center m-auto p-3 bg-success text-white fw-bold"
+                >
+                  Padel V Centenario 1
+                </div>
+              </td>
+              <td>
+                <div
+                  class="pistas text-center m-auto p-3 bg-success text-white fw-bold"
+                >
+                  Padel V Centenario 2
+                </div>
+              </td>
+              <td>
+                <div
+                  class="pistas text-center m-auto p-3 bg-success text-white fw-bold"
+                >
+                  Padel V Centenario 3
+                </div>
+              </td>
+              <td>
+                <div
+                  class="pistas text-center m-auto p-3 bg-success text-white fw-bold"
+                >
+                  Tenis V Centenario 1
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div
+                  class="horas text-center m-auto p-5 bg-danger bg-opacity-50"
+                >
+                  09:00
+                </div>
+              </td>
+              <td>
+                <div class="horas text-center m-auto p-5">09:00</div>
+              </td>
+              <td>
+                <div class="horas text-center m-auto p-5">09:00</div>
+              </td>
+              <td>
+                <div
+                  class="horas text-center m-auto p-5 bg-danger bg-opacity-50"
+                >
+                  09:00
+                </div>
+              </td>
+              <td>
+                <div class="horas text-center m-auto p-5">09:00</div>
+              </td>
+              <td>
+                <div
+                  class="horas text-center m-auto p-5 bg-danger bg-opacity-50"
+                >
+                  09:00
+                </div>
+              </td>
+              <td>
+                <div class="horas text-center m-auto p-5">09:00</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div
+                  class="horas text-center m-auto p-5 bg-danger bg-opacity-50"
+                >
+                  10:00
+                </div>
+              </td>
+              <td><div class="horas text-center m-auto p-5">10:00</div></td>
+              <td><div class="horas text-center m-auto p-5">10:00</div></td>
+              <td>
+                <div
+                  class="horas text-center m-auto p-5 bg-danger bg-opacity-50"
+                >
+                  10:00
+                </div>
+              </td>
+              <td>
+                <div
+                  class="horas text-center m-auto p-5 bg-danger bg-opacity-50"
+                >
+                  10:00
+                </div>
+              </td>
+              <td><div class="horas text-center m-auto p-5">10:00</div></td>
+              <td>
+                <div
+                  class="horas text-center m-auto p-5 bg-danger bg-opacity-50"
+                >
+                  10:00
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div
+                  class="horas text-center m-auto p-5 bg-danger bg-opacity-50"
+                >
+                  11:00
+                </div>
+              </td>
+              <td>
+                <div
+                  class="horas text-center m-auto p-5 bg-danger bg-opacity-50"
+                >
+                  11:00
+                </div>
+              </td>
+              <td><div class="horas text-center m-auto p-5">11:00</div></td>
+              <td>
+                <div
+                  class="horas text-center m-auto p-5 bg-danger bg-opacity-50"
+                >
+                  11:00
+                </div>
+              </td>
+              <td><div class="horas text-center m-auto p-5">11:00</div></td>
+              <td><div class="horas text-center m-auto p-5">11:00</div></td>
+              <td>
+                <div
+                  class="horas text-center m-auto p-5 bg-danger bg-opacity-50"
+                >
+                  11:00
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="horas text-center m-auto p-5">12:00</div></td>
+              <td><div class="horas text-center m-auto p-5">12:00</div></td>
+              <td><div class="horas text-center m-auto p-5">12:00</div></td>
+              <td><div class="horas text-center m-auto p-5">12:00</div></td>
+              <td><div class="horas text-center m-auto p-5">12:00</div></td>
+              <td><div class="horas text-center m-auto p-5">12:00</div></td>
+              <td><div class="horas text-center m-auto p-5">12:00</div></td>
+            </tr>
+            <tr>
+              <td><div class="horas text-center m-auto p-5">16:30</div></td>
+              <td><div class="horas text-center m-auto p-5">16:30</div></td>
+              <td>
+                <div
+                  class="horas text-center m-auto p-5 bg-danger bg-opacity-50"
+                >
+                  16:30
+                </div>
+              </td>
+              <td><div class="horas text-center m-auto p-5">16:30</div></td>
+              <td><div class="horas text-center m-auto p-5">16:30</div></td>
+              <td><div class="horas text-center m-auto p-5">16:30</div></td>
+              <td>
+                <div
+                  class="horas text-center m-auto p-5 bg-danger bg-opacity-50"
+                >
+                  16:30
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="horas text-center m-auto p-5">17:30</div></td>
+              <td>
+                <div
+                  class="horas text-center m-auto p-5 bg-danger bg-opacity-50"
+                >
+                  17:30
+                </div>
+              </td>
+              <td><div class="horas text-center m-auto p-5">17:30</div></td>
+              <td><div class="horas text-center m-auto p-5">17:30</div></td>
+              <td>
+                <div
+                  class="horas text-center m-auto p-5 bg-danger bg-opacity-50"
+                >
+                  17:30
+                </div>
+              </td>
+              <td><div class="horas text-center m-auto p-5">17:30</div></td>
+              <td><div class="horas text-center m-auto p-5">17:30</div></td>
+            </tr>
+            <tr>
+              <td>
+                <div
+                  class="horas text-center m-auto p-5 bg-danger bg-opacity-50"
+                >
+                  18:30
+                </div>
+              </td>
+              <td><div class="horas text-center m-auto p-5">18:30</div></td>
+              <td><div class="horas text-center m-auto p-5">18:30</div></td>
+              <td>
+                <div
+                  class="horas text-center m-auto p-5 bg-danger bg-opacity-50"
+                >
+                  18:30
+                </div>
+              </td>
+              <td><div class="horas text-center m-auto p-5">18:30</div></td>
+              <td><div class="horas text-center m-auto p-5">18:30</div></td>
+              <td><div class="horas text-center m-auto p-5">18:30</div></td>
+            </tr>
+            <tr>
+              <td><div class="horas text-center m-auto p-5">19:30</div></td>
+              <td>
+                <div
+                  class="horas text-center m-auto p-5 bg-danger bg-opacity-50"
+                >
+                  19:30
+                </div>
+              </td>
+              <td>
+                <div
+                  class="horas text-center m-auto p-5 bg-danger bg-opacity-50"
+                >
+                  19:30
+                </div>
+              </td>
+              <td>
+                <div
+                  class="horas text-center m-auto p-5 bg-danger bg-opacity-50"
+                >
+                  19:30
+                </div>
+              </td>
+              <td><div class="horas text-center m-auto p-5">19:30</div></td>
+              <td><div class="horas text-center m-auto p-5">19:30</div></td>
+              <td><div class="horas text-center m-auto p-5">19:30</div></td>
+            </tr>
+            <tr>
+              <td><div class="horas text-center m-auto p-5">20:30</div></td>
+              <td>
+                <div
+                  class="horas text-center m-auto p-5 bg-danger bg-opacity-50"
+                >
+                  20:30
+                </div>
+              </td>
+              <td><div class="horas text-center m-auto p-5">20:30</div></td>
+              <td><div class="horas text-center m-auto p-5">20:30</div></td>
+              <td><div class="horas text-center m-auto p-5">20:30</div></td>
+              <td>
+                <div
+                  class="horas text-center m-auto p-5 bg-danger bg-opacity-50"
+                >
+                  20:30
+                </div>
+              </td>
+              <td>
+                <div
+                  class="horas text-center m-auto p-5 bg-danger bg-opacity-50"
+                >
+                  20:30
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div
+                  class="horas text-center m-auto p-5 bg-danger bg-opacity-50"
+                >
+                  21:30
+                </div>
+              </td>
+              <td><div class="horas text-center m-auto p-5">21:30</div></td>
+              <td><div class="horas text-center m-auto p-5">21:30</div></td>
+              <td>
+                <div
+                  class="horas text-center m-auto p-5 bg-danger bg-opacity-50"
+                >
+                  21:30
+                </div>
+              </td>
+              <td>
+                <div
+                  class="horas text-center m-auto p-5 bg-danger bg-opacity-50"
+                >
+                  21:30
+                </div>
+              </td>
+              <td><div class="horas text-center m-auto p-5">21:30</div></td>
+              <td><div class="horas text-center m-auto p-5">21:30</div></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <footer class="mt-5">
+      <img src="build/img/wave.svg" alt="" />
+      <div class="d-flex flex-column bg-primary w-100 h-100 text-white p-3">
+        <div class="d-flex justify-content-between align-items-center">
+          <div>
+            <h1>DEPORTIUM</h1>
+          </div>
+          <div>
+            <i class="bi bi-instagram fs-1 mx-3"></i>
+            <i class="bi bi-twitter-x fs-1 mx-3"></i>
+            <i class="bi bi-twitch fs-1 mx-3"></i>
+            <i class="bi bi-tiktok fs-1 mx-3"></i>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between">
+          <p>&copy;2024 Deportium | Todos los derechos reservados</p>
+          <p>
+            Avisos legales | Accesibilidad | Política de privacidad | Cookies
+          </p>
+        </div>
+      </div>
+    </footer>
+    <div
+      class="modal fade"
+      id="modal"
+      tabindex="-1"
+      aria-labelledby="modal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/funcionesReserva.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>

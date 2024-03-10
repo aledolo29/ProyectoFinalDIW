@@ -1,0 +1,12 @@
+@use "../base/mixins" as m;
+@use "../base/variables" as var;
+@use "../custom";
+
+.registro {
+  button {
+    @include m.btn(var.$naranja, var.$blanco);
+  }
+}
+.btn-close {
+  color: var.$blanco;
+}

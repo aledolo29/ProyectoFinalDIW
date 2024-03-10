@@ -1,5 +1,5 @@
 {
-  "name": "meeti_bt5_custom",
+  "name": "proyectofinaldaw",
   "version": "1.0.0",
   "description": "Ejemplo Bootstrap personalizado",
   "main": "index.js",
@@ -16,6 +16,7 @@
   "license": "ISC",
   "devDependencies": {
     "bootstrap": "^5.3.3",
+    "purgecss": "^5.0.0",
     "sass": "^1.71.1"
   },
   "dependencies": {

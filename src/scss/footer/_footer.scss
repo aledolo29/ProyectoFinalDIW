@@ -1,5 +1,8 @@
+@use "../base/variables" as var;
+@use "../base/mixins" as m;
+@use "../custom";
 footer {
-    p{
-        font-size: 1rem;
-    }
+  p {
+    font-size: 1rem;
+  }
 }
